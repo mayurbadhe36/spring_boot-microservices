@@ -1,4 +1,4 @@
-package com.app.accounts.service;
+package com.app.accounts.service.impl;
 
 import com.app.accounts.Constants.AccountsConstants;
 import com.app.accounts.dto.AccountsDto;
@@ -11,16 +11,16 @@ import com.app.accounts.mapper.AccountsMapper;
 import com.app.accounts.mapper.CustomerMapper;
 import com.app.accounts.repository.IAccountsRepository;
 import com.app.accounts.repository.ICustomerRepository;
+import com.app.accounts.service.IAccountsService;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
-import java.time.LocalDateTime;
 import java.util.Optional;
 import java.util.Random;
 
 @Service
 @AllArgsConstructor
-public class AccountsServiceImpl implements IAccountsService{
+public class AccountsServiceImpl implements IAccountsService {
 
     private IAccountsRepository accountsRepository;
 
