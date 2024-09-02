@@ -72,6 +72,19 @@
 					</excludes>
 				</configuration>
 			</plugin>
+			<plugin>
+				<groupId>com.google.cloud.tools</groupId>
+				<artifactId>jib-maven-plugin</artifactId>
+				<version>3.3.2</version>
+				<configuration>
+					<to>
+						<image>deadshot362000/${project.artifactId}:s4</image>
+					</to>
+					<from>
+						<image>eclipse-temurin:21-jre</image>
+					</from>
+				</configuration>
+			</plugin>
 		</plugins>
 	</build>
 
