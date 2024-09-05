@@ -28,7 +28,7 @@ import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 		),
 		externalDocs = @ExternalDocumentation(
 				description =  "EBank Accounts microservice REST API Documentation",
-				url = "https://www.eazybytes.com/swagger-ui.html"
+				url = "https://www.ebank.com/swagger-ui.html"
 		)
 )
 public class AccountsApplication {
