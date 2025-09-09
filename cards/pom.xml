@@ -16,7 +16,7 @@
 	<name>cards</name>
 	<description>Microservice for Cards</description>
 	<properties>
-		<java.version>21</java.version>
+		<java.version>17</java.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -78,7 +78,7 @@
 				<version>3.3.2</version>
 				<configuration>
 					<to>
-						<image>deadshot362000/${project.artifactId}:s4</image>
+						<image>deadshot362000/${project.artifactId}:s6</image>
 					</to>
 					<from>
 						<image>eclipse-temurin:21-jre</image>
