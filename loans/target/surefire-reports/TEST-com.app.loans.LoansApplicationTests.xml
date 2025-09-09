@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.eazybytes.loans.LoansApplicationTests" time="0.021" tests="1" errors="1" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.app.loans.LoansApplicationTests" time="6.551" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -62,24 +62,46 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="" classname="com.eazybytes.loans.LoansApplicationTests" time="0.021">
-    <error message="Unable to find a @SpringBootConfiguration, you need to use @ContextConfiguration or @SpringBootTest(classes=...) with your test" type="java.lang.IllegalStateException"><![CDATA[java.lang.IllegalStateException: Unable to find a @SpringBootConfiguration, you need to use @ContextConfiguration or @SpringBootTest(classes=...) with your test
-	at org.springframework.util.Assert.state(Assert.java:76)
-	at org.springframework.boot.test.context.SpringBootTestContextBootstrapper.findConfigurationClass(SpringBootTestContextBootstrapper.java:246)
-	at org.springframework.boot.test.context.SpringBootTestContextBootstrapper.getOrFindConfigurationClasses(SpringBootTestContextBootstrapper.java:233)
-	at org.springframework.boot.test.context.SpringBootTestContextBootstrapper.processMergedContextConfiguration(SpringBootTestContextBootstrapper.java:150)
-	at org.springframework.test.context.support.AbstractTestContextBootstrapper.buildMergedContextConfiguration(AbstractTestContextBootstrapper.java:351)
-	at org.springframework.test.context.support.AbstractTestContextBootstrapper.buildDefaultMergedContextConfiguration(AbstractTestContextBootstrapper.java:267)
-	at org.springframework.test.context.support.AbstractTestContextBootstrapper.buildMergedContextConfiguration(AbstractTestContextBootstrapper.java:215)
-	at org.springframework.test.context.support.AbstractTestContextBootstrapper.buildTestContext(AbstractTestContextBootstrapper.java:108)
-	at org.springframework.boot.test.context.SpringBootTestContextBootstrapper.buildTestContext(SpringBootTestContextBootstrapper.java:111)
-	at org.springframework.test.context.TestContextManager.<init>(TestContextManager.java:142)
-	at org.springframework.test.context.TestContextManager.<init>(TestContextManager.java:126)
-	at org.springframework.test.context.junit.jupiter.SpringExtension.getTestContextManager(SpringExtension.java:366)
-	at org.springframework.test.context.junit.jupiter.SpringExtension.beforeAll(SpringExtension.java:131)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-]]></error>
-    <system-out><![CDATA[2025-09-05T01:45:48.960+05:30  INFO 25804 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.eazybytes.loans.LoansApplicationTests]: LoansApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+  <testcase name="contextLoads" classname="com.app.loans.LoansApplicationTests" time="0.406">
+    <system-out><![CDATA[01:45:42.542 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.app.loans.LoansApplicationTests]: LoansApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+01:45:42.640 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.app.loans.LoansApplication for test class com.app.loans.LoansApplicationTests
+01:45:42.788 [main] INFO org.springframework.boot.devtools.restart.RestartApplicationListener -- Restart disabled due to context in which it is running
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.2)
+
+2025-09-05T01:45:43.042+05:30  INFO 25804 --- [           main] com.app.loans.LoansApplicationTests      : Starting LoansApplicationTests using Java 17.0.11 with PID 25804 (started by mayur in D:\Mayur\Udemy\EasyBytes\Workspace\Microservices\loans)
+2025-09-05T01:45:43.043+05:30  INFO 25804 --- [           main] com.app.loans.LoansApplicationTests      : No active profile set, falling back to 1 default profile: "default"
+2025-09-05T01:45:44.468+05:30  INFO 25804 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-05T01:45:44.519+05:30  INFO 25804 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 44 ms. Found 1 JPA repository interface.
+2025-09-05T01:45:45.095+05:30  INFO 25804 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-09-05T01:45:45.252+05:30  INFO 25804 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2025-09-05T01:45:45.253+05:30  INFO 25804 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-09-05T01:45:45.383+05:30  INFO 25804 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-05T01:45:45.445+05:30  INFO 25804 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2025-09-05T01:45:45.482+05:30  INFO 25804 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-09-05T01:45:45.764+05:30  INFO 25804 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-05T01:45:45.803+05:30  WARN 25804 --- [           main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-09-05T01:45:46.612+05:30  INFO 25804 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+Hibernate: alter table if exists loans alter column loan_id set data type bigint
+Hibernate: alter table if exists loans alter column created_at set data type timestamp(6)
+Hibernate: alter table if exists loans alter column created_by set data type varchar(255)
+Hibernate: alter table if exists loans alter column updated_at set data type timestamp(6)
+Hibernate: alter table if exists loans alter column updated_by set data type varchar(255)
+Hibernate: alter table if exists loans alter column loan_number set data type varchar(255)
+Hibernate: alter table if exists loans alter column loan_type set data type varchar(255)
+Hibernate: alter table if exists loans alter column mobile_number set data type varchar(255)
+2025-09-05T01:45:46.666+05:30  INFO 25804 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-05T01:45:47.430+05:30  WARN 25804 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-05T01:45:48.316+05:30  INFO 25804 --- [           main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2025-09-05T01:45:48.370+05:30  INFO 25804 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-09-05T01:45:48.475+05:30  INFO 25804 --- [           main] com.app.loans.LoansApplicationTests      : Started LoansApplicationTests in 5.697 seconds (process running for 6.577)
 ]]></system-out>
   </testcase>
 </testsuite>
