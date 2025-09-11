@@ -1,0 +1,16 @@
+spring:
+  config:
+    activate:
+      on-profile: "prod"
+
+build:
+  version: "1.0"
+
+accounts:
+  message: "Welcome to EBank accounts related prod APIs "
+  contactDetails:
+    name: "Gaurav Bagul - Product Owner"
+    email: "gauravbagul2017@gmail.com"
+  onCallSupport:
+    - (+91) 9766797182
+    - (236) 203-0384
