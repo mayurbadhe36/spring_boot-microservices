@@ -14,3 +14,22 @@ spring:
     hibernate:
       ddl-auto: update
     show-sql: true
+  config:
+    import:
+      - "application_qa.yml"
+      - "application_prod.yml"
+  profiles:
+    active:
+      - "qa"
+
+build:
+  version: "3.0"
+
+loans:
+  message: "Welcome to EBank loans related local APIs "
+  contactDetails:
+    name: "Mayur Badhe - Developer"
+    email: "mayur@gmail.com"
+  onCallSupport:
+    - (+91) 9145587142
+    - (546) 764-8934
