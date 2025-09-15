@@ -1,0 +1,11 @@
+
+build:
+  version: "2.0"
+
+accounts:
+  message: "Welcome to EBank accounts related QA APIs "
+  contactDetails:
+    name: "Sumeet Padekar - QA Lead"
+    email: "sumeetpadekar1999@gmail.com"
+  onCallSupport:
+    - (666) 265-3765

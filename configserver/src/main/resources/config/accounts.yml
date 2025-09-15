@@ -1,0 +1,12 @@
+
+build:
+  version: "3.0"
+
+accounts:
+  message: "Welcome to EBank accounts related local APIs "
+  contactDetails:
+    name: "Mayur badhe - Developer"
+    email: "badhemayur01@gmail.com"
+  onCallSupport:
+    - (+91) 9689307060
+    - (+91) 9145587143
