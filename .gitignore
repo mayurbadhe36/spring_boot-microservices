@@ -1,1 +1,7 @@
 /.idea
+/accounts/target/
+/cards/target/
+/configserver/target/
+/loans/target/
+
+
